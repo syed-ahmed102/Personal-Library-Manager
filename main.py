@@ -90,6 +90,6 @@ if books:
         st.write(f"**{book[1]}** by {book[2]} ({book[3]})")
         if st.button(f"Delete {book[1]}", key=book[0]):
             delete_book(book[0])
-            st.experimental_rerun()
+            st.rerun()
 else:
     st.info("No books added yet.")
